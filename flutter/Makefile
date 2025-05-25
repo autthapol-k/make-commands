@@ -1,5 +1,3 @@
-all: clean pub-get build-gen build-slang
-
 build-gen:
 	dart run build_runner build --delete-conflicting-outputs
 
