@@ -14,10 +14,10 @@ clean:
 	flutter clean
 
 format:
-	dart format . --line-length $(or $(LINE_LENGTH),100)
+	dart format . --line-length $(or $(length),100)
 
 fix:
-	dart fix --apply --code $(RULE)
+	dart fix --apply --code $(rule)
 
 flavor-gen:
 	flutter pub run flutter_flavorizr -p assets:download,assets:extract,android:androidManifest,android:buildGradle,android:dummyAssets,android:icons,ios:podfile,ios:xcconfig,ios:buildTargets,ios:schema,ios:dummyAssets,ios:icons,ios:plist,google:firebase,huawei:agconnect,assets:clean,ide:config
